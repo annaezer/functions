@@ -60,7 +60,7 @@ console.log(typeOfEmail(externEmail2));
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
 
 function checkEmailValidity(email) {
-    if (email.includes("@") && (email.charAt(email.length - 1) != '.') &&!(email.includes(","))) {
+    if (email.includes("@") && (email.charAt(email.length - 1) != '.') && !(email.includes(","))) {
         return true;
     } else {
         return false;
@@ -70,5 +70,5 @@ function checkEmailValidity(email) {
 console.log(checkEmailValidity("n.eeken@novi.nl"));
 console.log(checkEmailValidity("tessmellink@novi.nl"));
 console.log(checkEmailValidity("n.eekenanovi.nl"));
-console.log(checkEmailValidity("n.eeken@novinl.") );
+console.log(checkEmailValidity("n.eeken@novinl."));
 console.log(checkEmailValidity("tessmellink@novi,nl"));
